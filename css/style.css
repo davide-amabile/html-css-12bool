@@ -1,0 +1,28 @@
+.big-container {
+  margin: 50px;
+}
+
+.container [class*="col-"] {
+  background-color: 	#FFC0CB;
+  height: 200px;
+  border: 1px solid 	#000000;
+  position: relative;
+}
+
+.container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sub-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sub-container [class*="col-"]  {
+  background-color: #FF69B4;
+  border: 1px solid 	#ffffff;
+}
